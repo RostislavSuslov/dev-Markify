@@ -1,0 +1,47 @@
+@use "variables"as variables;
+
+.nav {
+    &-link {
+        padding: 8px;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        color: variables.$text;
+        text-decoration: none;
+
+        &:hover {
+            color: variables.$secondary-color;
+        }
+
+        span {
+            position: relative;
+
+            &:before {
+                content: "";
+                width: 0;
+                height: 1px;
+                background-color: currentColor;
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                transition: .3s;
+            }
+        }
+    }
+
+    &-link_active {
+        color: variables.$secondary-color;
+
+        span {
+            &:before {
+                width: 100%;
+            }
+        }
+    }
+
+    &-list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}

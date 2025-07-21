@@ -20,8 +20,13 @@
         max-width: 145px;
     }
 
-    .header__nav {
-        margin-top: 0;
-        padding: 18px 0;    
+    .header {
+        .nav {
+            margin-top: 0;
+        }
+    }
+
+    .nav {
+        padding: 18px 0;
     }
 }
