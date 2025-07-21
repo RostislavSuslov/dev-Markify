@@ -1,8 +1,20 @@
 ///fonts///
-$font-primary: "Open Sans";
-$font-secondary:  "monospace";
+$font-primary: "OpenSans";
+$font-secondary: "Exo";
 $font-size: 16px;
+$line-height: 1.5;
 
 ///colors///
-$primary-color: #222;
-$secondary-color: rgb(98, 0, 255);
+$primary-color: #7F3A6A;
+$primary-color-transparent: #7F3A6A77;
+$secondary-color: #E9A923;
+$secondary-color-transparent:#E9A92377;
+$titles: #313131;
+$text: #585858;
+$background: #FDFCFC;
+$accent-background: #FDF8F3;
+
+///sizes///
+$container-width: 1165px; 
+$container-padding: 12px;
+$icon-size: 40px;
