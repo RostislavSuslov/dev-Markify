@@ -1,0 +1,27 @@
+@use "../variables"as variables;
+
+@media screen and (max-width: 991px) {
+    .container {
+        padding-left: variables.$container-padding-mobile;
+        padding-right: variables.$container-padding-mobile;
+    }
+
+    h1,
+    .h1 {
+        font-size: 28px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 24px;
+    }
+
+    .logo {
+        max-width: 145px;
+    }
+
+    .header__nav {
+        margin-top: 0;
+        padding: 18px 0;    
+    }
+}
