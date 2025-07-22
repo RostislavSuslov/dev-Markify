@@ -11,6 +11,9 @@ body {
     font-size: variables.$font-size;
     line-height: variables.$line-height;
     background-color: variables.$background;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 button {
@@ -60,9 +63,10 @@ ul {
 
         &[class] {
             margin-bottom: 0;
+
             &:before {
-            display: none;
-        }
+                display: none;
+            }
         }
     }
 
@@ -114,7 +118,7 @@ strong {
 
 a {
     transition: .3s;
-    
+
     &:hover {
         .icon {
             color: variables.$secondary-color;
@@ -203,6 +207,18 @@ button {
     margin-right: auto;
     padding-left: variables.$container-padding;
     padding-right: variables.$container-padding;
+}
+
+.markup-link {
+    position: fixed;
+    bottom: 12px;
+    left: 12px;
+    text-decoration: none;
+    background: #7F3A6A;
+    color: #fff;
+    border-radius: 50%;
+    padding: 6px 11px;
+    font-size: 14px;
 }
 
 ::selection {

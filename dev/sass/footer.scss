@@ -1,8 +1,48 @@
-@use "variables" as variables;
+@use "variables"as variables;
 
-footer{
-    height: 100px;
-    background: variables.$secondary-color;
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px variables.$container-padding;
+    background-color: variables.$accent-background;
+    margin-top: auto;
+    
+    .logo {
+        margin-bottom: 24px;
+    }
+
+    .nav {
+        margin-bottom: 28px;
+    }
+
+    .socials {
+        margin-bottom: 28px;
+    }
 }
 
- 
+.socials__list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.contacts {
+    text-align: center;
+
+    &__title {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .contacts__link {
+        color: variables.$text;
+        text-decoration: none;
+
+        &:hover {
+            color: variables.$secondary-color;
+        }
+    }
+    
+}

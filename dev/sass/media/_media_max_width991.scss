@@ -29,4 +29,41 @@
     .nav {
         padding: 18px 0;
     }
+
+    footer {
+        padding: 64px variables.$container-padding-mobile 32px;
+
+        .logo {
+            margin-bottom: 17px;
+        }
+
+        .nav {
+            padding: 0;
+        }
+
+        .nav-list {
+            width: 188px;
+            gap: 0;
+            flex-direction: column;
+        }
+
+        .nav-item {
+            text-align: center;
+        }
+
+        .nav-link {
+            font-size: 14px;
+            padding: 13.5px;
+            width: 100%;
+        }
+    }
+
+    .contacts__title {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .contacts__link {
+        font-size: 14px;
+    }
 }
