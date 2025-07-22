@@ -15,8 +15,23 @@ $background: #FDFCFC;
 $accent-background: #FDF8F3;
 
 ///sizes///
-$container-width: 1165px; 
+$container-width: 1165px;
 $container-padding: 12px;
 $container-padding-mobile: 16px;
 $icon-size: 40px;
 
+@mixin container {
+    max-width: $container-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+}
+
+%h1 {
+    font-family: $font-secondary;
+    font-size: 44px;
+    line-height: 1.4;
+    color: $titles;
+    font-weight: 700;
+}

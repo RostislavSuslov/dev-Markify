@@ -1,0 +1,54 @@
+@use "variables"as variables;
+
+.tabs {
+    padding: 38px 0;
+}
+
+.tabs__row {
+    display: flex;
+    gap: 36px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.tabs__row_reverse {
+    flex-direction: row-reverse;
+}
+
+.tabs__pane {
+    display: block;
+    opacity: 0;
+    transition: opacity 1.4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.tabs__pane_show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    position: static;
+    z-index: 1;
+}
+
+.tabs__img-box {
+    max-width: 461px;
+    width: 100%;
+}
+
+.tabs__content {
+    max-width: 555px;
+    width: 100%;
+    padding-top: 12px;
+}
+
+.tabs__title {
+    @extend %h1;
+    margin-bottom: 28px;
+    text-transform: capitalize;
+}

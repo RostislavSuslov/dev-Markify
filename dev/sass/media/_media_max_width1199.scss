@@ -1,2 +1,15 @@
 @media screen and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .tabs__title,
+    h1 {
+        font-size: 36px;
+    }
+
+    .tabs__content {
+        max-width: 455px;
+    }
+
 }

@@ -1,13 +1,18 @@
 @use "../variables"as variables;
 
 @media screen and (max-width: 991px) {
+    body {
+        background-image: url(./assets/img/background-mobile.svg);
+    }
+
     .container {
+        max-width: 720px;
         padding-left: variables.$container-padding-mobile;
         padding-right: variables.$container-padding-mobile;
     }
 
     h1,
-    .h1 {
+    .tabs__title {
         font-size: 28px;
     }
 
@@ -21,13 +26,45 @@
     }
 
     .header {
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        .header__top {
+            padding-top: 26px;
+        }
+
         .nav {
             margin-top: 0;
+            padding-bottom: 0;
         }
     }
 
     .nav {
-        padding: 18px 0;
+        padding: 36px 0;
+    }
+
+    .tabs {
+        padding: 32px 0;
+    }
+
+    .tabs__row {
+        flex-direction: column;
+    }
+
+    .tabs__content {
+        padding: 0;
+    }
+
+    .tabs__title {
+        margin-bottom: 23px;
+    }
+
+
+    .text-decoration-orange {
+        &:before {
+            bottom: 4px;
+            height: 10px;
+        }
     }
 
     footer {

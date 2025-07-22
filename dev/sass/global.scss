@@ -10,10 +10,11 @@ body {
     font-family: variables.$font-primary;
     font-size: variables.$font-size;
     line-height: variables.$line-height;
-    background-color: variables.$background;
+    color: variables.$text;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: url(./assets/img/background-desktop.png) center top / 100% no-repeat variables.$background;
 }
 
 button {
@@ -25,21 +26,8 @@ img {
     height: auto;
 }
 
-h1,
-.h1,
-h2,
-.h2 {
-    font-family: variables.$font-secondary;
-}
-
-h1,
-.h1 {
-    font-size: 44px;
-}
-
-h2,
-.h2 {
-    font-size: 24px;
+h1 {
+   @extend %h1;
 }
 
 ol,
@@ -130,6 +118,12 @@ button {
     font-family: variables.$font-primary;
 }
 
+
+
+.container {
+    @include variables.container;
+}
+
 .btn {
     display: inline-block;
     font-weight: 700;
@@ -179,8 +173,6 @@ button {
     }
 }
 
-
-
 .icon {
     display: inline-block;
     color: variables.$primary-color;
@@ -193,6 +185,23 @@ button {
     }
 }
 
+.text-decoration-orange {
+    display: inline-block;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 8px;
+        height: 12px;
+        width: 100%;
+        border-radius: 21px;
+        background-color: variables.$secondary-color;
+        z-index: -1 ;
+    }
+}
+
 .svg-sprite {
     display: none;
 
@@ -201,20 +210,14 @@ button {
     }
 }
 
-.container {
-    max-width: variables.$container-width;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: variables.$container-padding;
-    padding-right: variables.$container-padding;
-}
+
 
 .markup-link {
     position: fixed;
     bottom: 12px;
     left: 12px;
     text-decoration: none;
-    background: #7F3A6A;
+    background: variables.$font-primary;
     color: #fff;
     border-radius: 50%;
     padding: 6px 11px;
