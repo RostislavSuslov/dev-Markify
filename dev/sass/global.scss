@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: variables.$font-primary;
     font-size: variables.$font-size;
@@ -27,7 +32,7 @@ img {
 }
 
 h1 {
-   @extend %h1;
+    @extend %h1;
 }
 
 ol,
@@ -85,7 +90,6 @@ ul {
             content: counter(li, circle) "";
         }
     }
-
 }
 
 
@@ -105,6 +109,7 @@ strong {
 }
 
 a {
+    color: variables.$primary-color;
     transition: .3s;
 
     &:hover {
@@ -178,7 +183,7 @@ button {
     color: variables.$primary-color;
     transition: .3s;
 
-    .icon__svg {
+    &__svg {
         width: variables.$icon-size;
         height: variables.$icon-size;
         vertical-align: middle;
@@ -198,7 +203,7 @@ button {
         width: 100%;
         border-radius: 21px;
         background-color: variables.$secondary-color;
-        z-index: -1 ;
+        z-index: -1;
     }
 }
 
@@ -210,14 +215,12 @@ button {
     }
 }
 
-
-
 .markup-link {
     position: fixed;
     bottom: 12px;
     left: 12px;
     text-decoration: none;
-    background: variables.$font-primary;
+    background: variables.$primary-color;
     color: #fff;
     border-radius: 50%;
     padding: 6px 11px;

@@ -1,10 +1,5 @@
 @use "variables"as variables;
 
-.logo {
-    display: inline-block;
-    max-width: 194px;
-}
-
 .header {
     padding-bottom: 24px;
 
@@ -21,4 +16,9 @@
     .nav {
         margin-top: -14px;
     }
+}
+
+.logo {
+    display: inline-block;
+    max-width: 194px;
 }

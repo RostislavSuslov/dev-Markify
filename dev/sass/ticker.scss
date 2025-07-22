@@ -1,0 +1,77 @@
+@use "variables"as variables;
+
+.ticker {
+    --max-width: 1920px;
+    max-width: var(--max-width);
+    height: 238px;
+    position: relative;
+    margin: 0 auto -25px;
+    overflow: hidden;
+
+    &__track {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: -15px;
+        width: calc(100vw + 30px);
+        transform: rotate(-5deg) translateY(-50%);
+        background-color: variables.$secondary-color;
+        user-select: none;
+
+        &:last-child {
+            background-color: variables.$primary-color;
+            transform: rotate(5deg) translateY(-50%);
+            right: 0;
+            position: absolute;
+
+            .ticker__item {
+                &:nth-child(odd) {
+                    color: variables.$primary-color;
+                }
+            }
+        }
+    }
+
+    &__item {
+        font-family: variables.$font-secondary;
+        font-size: 24px;
+        font-weight: 700;
+        color: #ffffff;
+        padding: 12.5px variables.$container-padding;
+        min-width: 230px;
+        text-transform: uppercase;
+        text-align: center;
+
+        &:nth-child(odd) {
+            color: variables.$secondary-color;
+            text-shadow:
+                -1px -1px 0 #ffffff,
+                1px -1px 0 #ffffff,
+                -1px 1px 0 #ffffff,
+                1px 1px 0 #ffffff;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: space-evenly;
+        min-width: 100%;
+        animation: ticker 24s linear infinite;
+    }
+
+    &__text_reverce {
+        animation-direction: reverse;
+    }
+}
+
+
+@keyframes ticker {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

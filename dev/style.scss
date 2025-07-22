@@ -2,7 +2,7 @@
 Theme Name: CustomTheme
 Theme URI: https://wordpress.org/themes/CustomTheme/
 Author: the Rost team
-Author URI: http://rost.com.ua/
+Author URI: https://rost.4kls.com/
 Description: CustomTheme brings your site to life with immersive featured images and subtle animations. Our default theme works great in many languages, for any abilities, and on any device.
 Version: 1.0
 License: GNU General Public License v2 or later
@@ -17,6 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @use "sass/global";
 @use "sass/header";
 @use "sass/nav";
-@use "sass/first-screen";
+@use "sass/tabs";
+@use "sass/ticker";
 @use "sass/footer";
 @use "sass/media/media";

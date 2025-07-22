@@ -16,20 +16,11 @@
         font-size: 28px;
     }
 
-    .btn {
-        font-size: 14px;
-        padding: 8px 24px;
-    }
-
-    .logo {
-        max-width: 145px;
-    }
-
     .header {
         margin-bottom: 0;
         padding-bottom: 0;
 
-        .header__top {
+        &__top {
             padding-top: 26px;
         }
 
@@ -39,25 +30,36 @@
         }
     }
 
+
+    .logo {
+        max-width: 145px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 24px;
+    }
+
     .nav {
         padding: 36px 0;
     }
 
     .tabs {
-        padding: 32px 0;
+        padding: 32px 0 0;
+
+        &__row {
+            flex-direction: column;
+        }
+
+        &__content {
+            padding: 0;
+        }
+
+        &__title {
+            margin-bottom: 23px;
+        }
     }
 
-    .tabs__row {
-        flex-direction: column;
-    }
-
-    .tabs__content {
-        padding: 0;
-    }
-
-    .tabs__title {
-        margin-bottom: 23px;
-    }
 
 
     .text-decoration-orange {
@@ -67,40 +69,63 @@
         }
     }
 
+    .ticker {
+
+        &__track {
+            transform: rotate(8deg) translateY(-50%);
+
+            &:last-child {
+                transform: rotate(-8deg) translateY(-50%);
+            }
+        }
+
+        &__item {
+            font-size: 20px;
+            padding: 10px 12px;
+            min-width: 210px;
+        }
+    }
+
+
     footer {
         padding: 64px variables.$container-padding-mobile 32px;
 
         .logo {
-            margin-bottom: 17px;
+            margin-bottom: 16px;
         }
 
         .nav {
             padding: 0;
+            margin-bottom: 28px;
+
+            &-list {
+                width: 188px;
+                gap: 0;
+                flex-direction: column;
+            }
+
+            &-item {
+                text-align: center;
+            }
+
+            &-link {
+                font-size: 14px;
+                padding: 13.5px;
+                width: 100%;
+            }
         }
 
-        .nav-list {
-            width: 188px;
-            gap: 0;
-            flex-direction: column;
-        }
+    }
 
-        .nav-item {
-            text-align: center;
-        }
-
-        .nav-link {
+    .contacts {
+        &__title {
             font-size: 14px;
-            padding: 13.5px;
-            width: 100%;
+            margin-bottom: 6px;
+        }
+
+        &__link {
+            font-size: 14px;
         }
     }
 
-    .contacts__title {
-        font-size: 14px;
-        margin-bottom: 6px;
-    }
-
-    .contacts__link {
-        font-size: 14px;
-    }
 }
