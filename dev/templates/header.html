@@ -1,16 +1,16 @@
 <header id="header" class="header">
     <div class="container">
         <div class="header__top">
-            <a href="index.html" class="logo">
-               <img src="./assets/img/logo.svg" alt="logo">
+            <a href="index.html" class="logo" aria-label="Go to homepage">
+               <img src="./assets/img/logo.svg" alt="Company logo">
             </a>
-            <button type="button" class="btn btn_primary">sign up</button>
+            <button type="button" class="btn btn_primary" aria-label="Open sign-up form" aria-haspopup="dialog" aria-controls="signupModal">sign up</button>
         </div>
-        <nav class="nav" data-main-nav>
+        <nav class="nav" aria-label="Main navigation" role="tablist" data-main-nav>
             <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link nav-link_active" aria-controls="tab1"><span>Home</span></a></li>
-                <li class="nav-item"><a href="#" class="nav-link" aria-controls="tab2"><span>About us</span></a></li>
-                <li class="nav-item"><a href="#" class="nav-link" aria-controls="tab3"><span>Services</span></a></li>
+                <li class="nav-item"><button type="button" class="nav-link nav-link_active" aria-label="Marketing consulting services and strategy" aria-controls="tab1"><span>Home</span></button></li>
+                <li class="nav-item"><button type="button" class="nav-link" aria-label="Business deal closed successfully" aria-controls="tab2"><span>About us</span></button></li>
+                <li class="nav-item"><button type="button" class="nav-link" aria-label="Generating new leads for your business" aria-controls="tab3"><span>Services</span></button></li>
             </ul>
         </nav>
     </div>

@@ -1,9 +1,12 @@
 function installTabs() {
     document.addEventListener("DOMContentLoaded", () => {
         const mainNav = document.querySelector('[data-main-nav]');
-        const navLinks = document.querySelectorAll('[aria-controls]');
-        const mainNavLinks = mainNav.querySelectorAll('[aria-controls]');
+        const navLinks = document.querySelectorAll('.nav-link[aria-controls]');
+        const mainNavLinks = mainNav.querySelectorAll('.nav-link[aria-controls]');
         const tabsPanes = document.querySelectorAll('.tabs__pane');
+        
+        console.log(tabsPanes);
+        
 
         const switchTab = (targetId) => {
             tabsPanes.forEach(pane => {

@@ -1,19 +1,19 @@
 <footer>
-    <a href="index.html" class="logo">
-       <img src="./assets/img/logo.svg" alt="logo">
+    <a href="index.html" class="logo" aria-label="Go to homepage">
+        <img src="./assets/img/logo.svg" alt="Company logo">
     </a>
-    <nav class="nav">
+    <nav class="nav" aria-label="Footer navigation">
         <ul class="nav-list">
-            <li class="nav-item"><a href="#header" class="nav-link" aria-controls="tab1"><span>Home</span></a></li>
-            <li class="nav-item"><a href="#header" class="nav-link" aria-controls="tab2"><span>About us</span></a></li>
-            <li class="nav-item"><a href="#header" class="nav-link" aria-controls="tab3"><span>Services</span></a></li>
-            <li class="nav-item"><a href="#header" class="nav-link"><span>Terms Of Use</span></a></li>
+            <li class="nav-item"><a href="#header" class="nav-link" title="Home" aria-details="marketing-consulting - Lorem ipsum dolor sit amet consectetur" aria-controls="tab1"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#header" class="nav-link" title="About us"aria-details="business-deal - Lorem ipsum dolor sit amet consectetur" aria-controls="tab2"><span>About us</span></a></li>
+            <li class="nav-item"><a href="#header" class="nav-link" title="Services" aria-details="generating-new-leads - Lorem ipsum dolor sit amet consectetur" aria-controls="tab3"><span>Services</span></a></li>
+            <li class="nav-item"><a href="#header" class="nav-link" title="Terms Of Use" ><span>Terms Of Use</span></a></li>
         </ul>
     </nav>
-    <nav class="socials">
+    <nav class="socials" aaria-label="social-nav-title">
         <ul class="socials__list">
             <li class="socials__item">
-                <a href="#" class="socials__link" aria-label="Facebook">
+                <a href="#" class="socials__link" title="Facebook" aria-label="Visit Markify on Facebook">
                     <i class="icon">
                         <svg class="icon__svg">
                             <use href="#icon-facebook"></use>
@@ -22,7 +22,7 @@
                 </a>
             </li>
             <li class="socials__item">
-                <a href="#" class="socials__link" aria-label="LinkedIn">
+                <a href="#" class="socials__link" title="LinkedIn" aria-label="Visit Markify on LinkedIn">
                     <i class="icon">
                         <svg class="icon__svg">
                             <use href="#icon-linkedin"></use>
@@ -31,7 +31,7 @@
                 </a>
             </li>
             <li class="socials__item">
-                <a href="#" class="socials__link" aria-label="Instagram">
+                <a href="#" class="socials__link" title="Instagram" aria-label="Visit Markify on Instagram">
                     <i class="icon">
                         <svg class="icon__svg">
                             <use href="#icon-instagram"></use>
@@ -41,8 +41,8 @@
             </li>
         </ul>
     </nav>
-    <address class="contacts">
-        <div class="contacts__title">Contact Us</div>
+    <address class="contacts" aria-labelledby="contacts-title">
+        <div class="contacts__title" id="contacts-title">Contact Us</div>
         <a href="mailto:support@markify.com" class="contacts__link">support@markify.com</a>
     </address>
 </footer>
