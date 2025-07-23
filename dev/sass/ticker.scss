@@ -3,26 +3,26 @@
 .ticker {
     --max-width: 1920px;
     max-width: var(--max-width);
-    height: 238px;
+    height: 240px;
     position: relative;
-    margin: 0 auto -25px;
+    margin: 0 auto -34px;
     overflow: hidden;
 
     &__track {
         display: flex;
         position: absolute;
-        top: 50%;
-        left: -15px;
-        width: calc(100vw + 30px);
-        transform: rotate(-5deg) translateY(-50%);
+        top: 80px;
+        left: -25px;
+        max-width: calc(var(--max-width) + 50px);
+        transform: rotate(-5deg);
         background-color: variables.$secondary-color;
         user-select: none;
 
         &:last-child {
             background-color: variables.$primary-color;
-            transform: rotate(5deg) translateY(-50%);
-            right: 0;
-            position: absolute;
+            transform: rotate(5deg);
+            right: -25px;
+            left: initial;
 
             .ticker__item {
                 &:nth-child(odd) {

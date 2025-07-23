@@ -45,7 +45,7 @@
     }
 
     .tabs {
-        padding: 32px 0 0;
+        padding: 32px 0 36px;
 
         &__row {
             flex-direction: column;
@@ -70,12 +70,14 @@
     }
 
     .ticker {
+        height: 215px;
 
         &__track {
-            transform: rotate(8deg) translateY(-50%);
+            transform: rotate(8deg);
+            top: 145px;
 
             &:last-child {
-                transform: rotate(-8deg) translateY(-50%);
+                transform: rotate(-8deg);
             }
         }
 

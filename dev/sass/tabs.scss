@@ -1,7 +1,7 @@
 @use "variables"as variables;
 
 .tabs {
-    padding: 38px 0 8px;
+    padding: 38px 0 16px;
 
     &__row {
         display: flex;
@@ -43,7 +43,6 @@
     &__content {
         max-width: 555px;
         width: 100%;
-        padding-top: 12px;
     }
 
     &__title {
