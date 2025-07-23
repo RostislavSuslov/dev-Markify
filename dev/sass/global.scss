@@ -152,7 +152,7 @@ button {
     transition: .3s;
 
     &.btn_primary {
-        color: #fff;
+        color: #ffffff;
         background-color: variables.$primary-color;
         border-color: variables.$primary-color;
 
@@ -211,10 +211,6 @@ button {
 
 .svg-sprite {
     display: none;
-
-    path {
-        --inline-fill: #ffffff;
-    }
 }
 
 .markup-link {
@@ -223,7 +219,7 @@ button {
     left: 12px;
     text-decoration: none;
     background: variables.$primary-color;
-    color: #fff;
+    color: #ffffff;
     border-radius: 50%;
     padding: 6px 11px;
     font-size: 14px;
