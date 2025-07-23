@@ -64,7 +64,7 @@
 
     .text-decoration-orange {
         &:before {
-            bottom: 4px;
+            bottom: 2px;
             height: 10px;
         }
     }
@@ -90,7 +90,7 @@
 
 
     footer {
-        padding: 64px variables.$container-padding-mobile 32px;
+        padding: 64px variables.$container-padding-mobile 26px;
 
         .logo {
             margin-bottom: 16px;
